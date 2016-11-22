@@ -1,0 +1,366 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery Mobile 網路應用程式</title>
+<link href="jquery-mobile/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+<style type="text/css">
+body {
+}
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 不支援最大寬度，因此寬度預設為 100% */
+.ie6 img {
+	width: 100%;
+}
+.title1 {
+	color: #F60;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: dotted;
+	border-bottom-style: dotted;
+	border-top-color: #999999;
+	border-bottom-color: #999999;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.copyright {
+	font-size: 12px;
+	text-align: center;
+	padding: 10px;
+	font-weight: normal;
+}
+.ui-page {
+	background-image: url(images/bg.jpg);
+	background-repeat: repeat-x;
+	background-position: left 45px;
+	background-color: #FFF;
+}
+</style>
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+</head> 
+<body> 
+
+<div data-role="page" id="page">
+	<div data-role="header">
+		<h1><img src="images/logo.png" alt="FlagJapan 福拉格日本旅遊網"></h1>
+	</div>
+	<img src="images/headp.jpg">
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#page2">推薦行程</a></li>
+            <li><a href="#page3">日本簡介</a></li>
+			<li><a href="#page4">日本寫真館</a></li>
+			<li><a href="#page5">旅遊日誌</a></li>
+		  <li><a href="#page6">相關連結</a></li>
+		</ul>		
+	</div>
+	<div class="copyright" data-role="footer">
+      <div data-role="controlgroup" data-type="horizontal"><a href="#page2" data-role="button">推薦行程</a><a href="#page3" data-role="button">日本簡介</a><a href="#page4" data-role="button">日本寫真館</a><a href="#page5" data-role="button">旅遊日誌</a><a href="#page6" data-role="button">相關連結</a><a href="#page" data-role="button">HOME</a></div>
+      本網站刊登之所有文字．圖片資訊均受版權法保護　嚴禁擅自複製．轉載<br>
+Copyright © 2012 Flag Japan Co.,Ltd. All rights reserved.	</div>
+</div>
+
+<div data-role="page" id="page2">
+	<div data-role="header">
+		<h1><a href="#page"><img src="images/logo.png" alt="FlagJapan 福拉格日本旅遊網"></a></h1>
+	</div>
+	<img src="images/headp1.png" alt="推薦行程">
+	<div data-role="content">
+	  <div data-role="collapsible-set">
+	    <div data-role="collapsible">
+	      <h3>關東</h3>  
+	      <ul data-role="listview" data-theme="b">
+	        <li><a href="#page7">
+	          <h3>東京．迪士尼 橫濱．中華街 拉麵博物館 超人氣五日遊</h3>
+	          <p>出發日期：2100/6/7(四) - 2100/6/11(一) 5天4夜</p>
+	          <p class="ui-li-aside">25,900起</p>
+	          </a></li>
+	        <li><a href="#">
+	          <h3>東京 3 大樂園‧橫濱愛之船 5 日</h3>
+	          <p>出發日期：2100/6/7(四) - 2100/6/11(一) 5天4夜</p>
+	          <p class="ui-li-aside">29,000起</p>
+	          </a></li>
+	        <li><a href="#">
+	          <h3>東京溫泉‧八景島‧伊豆列車‧迪士尼</h3>
+	          <p>出發日期：2100/6/7(四) - 2100/6/11(一) 5天4夜</p>
+	          <p class="ui-li-aside">39,000起</p>
+	          </a></li>
+          </ul>
+        </div>
+	    <div data-role="collapsible" data-collapsed="true">
+	      <h3>關西</h3>
+	      <p>行程規畫中。</p>
+        </div>
+	    <div data-role="collapsible" data-collapsed="true">
+	      <h3>北海道、九州</h3>
+	      <p>行程規畫中。</p>
+        </div>
+      </div>
+	</div>
+	<div class="copyright" data-role="footer"> 
+	  <div data-role="controlgroup" data-type="horizontal"><a href="#page2" data-role="button">推薦行程</a><a href="#page3" data-role="button">日本簡介</a><a href="#page4" data-role="button">日本寫真館</a><a href="#page5" data-role="button">旅遊日誌</a><a href="#page6" data-role="button">相關連結</a><a href="#page" data-role="button">HOME</a></div>
+	  本網站刊登之所有文字．圖片資訊均受版權法保護　嚴禁擅自複製．轉載<br>
+	  Copyright © 2012 Flag Japan Co.,Ltd. All rights reserved. </div>
+</div>
+
+<div data-role="page" id="page3">
+  <div data-role="header">
+    <h1><a href="#page"><img src="images/logo.png" alt="FlagJapan 福拉格日本旅遊網"></a></h1>
+  </div>
+  <img src="images/headp2.png" alt="日本簡介">
+  <div data-role="content"><img src="images/japanmap.gif"> 
+    <p>日本全國分為47個行政區，稱為都道府縣。</p>
+    <p> 北海道˙東北：北海道 | 青森 | 岩手 | 宮城 | 秋田 | 山形 | 福島 </p>
+    <p>關東：東京 | 神奈川 | 埼玉 | 千葉 | 茨城 | 栃木 | 群馬 </p>
+    <p>信越˙北陸：新潟 | 長野 | 富山 | 石川 | 福井 | 山梨</p>
+    <p> 東海：愛知 | 岐阜 | 静岡 | 三重 </p>
+    <p>關西（近畿）：大阪 | 兵庫 | 京都 | 滋賀 | 奈良 | 和歌山 </p>
+    <p>中國：鳥取 | 島根 | 岡山 | 広島 | 山口 四國：徳島 | 香川 | 愛媛 | 高知 </p>
+    <p>九州˙沖繩：福岡 | 佐賀 | 長崎 | 熊本 | 大分 | 宮崎 | 鹿児島 | 沖縄 </p>
+    <h2>其他注意事項 </h2>
+    <p>日本與台灣的時差為一小時，例如日本早上 9 時，等於台灣早上 8 時，比台灣快一個小時；兌換率日幣￥3.6≒台幣NT$ 1，但匯率經常有變動，建議出國前再自行查詢匯率比；電壓100伏特60頻率，若購買電器用品時，需注意變壓問題。</p>
+  </div>
+	<div class="copyright" data-role="footer"> 
+	  <div data-role="controlgroup" data-type="horizontal"><a href="#page2" data-role="button">推薦行程</a><a href="#page3" data-role="button">日本簡介</a><a href="#page4" data-role="button">日本寫真館</a><a href="#page5" data-role="button">旅遊日誌</a><a href="#page6" data-role="button">相關連結</a><a href="#page" data-role="button">HOME</a></div>
+	  本網站刊登之所有文字．圖片資訊均受版權法保護　嚴禁擅自複製．轉載<br>
+	  Copyright © 2012 Flag Japan Co.,Ltd. All rights reserved. </div>
+</div>
+
+<div data-role="page" id="page4">
+  <div data-role="header">
+    <h1><a href="#page"><img src="images/logo.png" alt="FlagJapan 福拉格日本旅遊網"></a></h1>
+  </div>
+  <img src="images/headp3.png" alt="日本寫真館">
+  <div data-role="content">
+    <p>集結日本各地的精彩照片, 帶您親眼目睹日本之美！</p><div data-role="collapsible-set">
+      <div data-role="collapsible">
+        <h3>北海道簡介</h3>
+        <p>北海道 是日本四島中最北的島嶼，是日本47個都道府縣中唯一的道，為日本除了本州以外最大的島，最大城市為札幌。由於緯度較高, 擁有一年四季變化莫測的美麗自然風景，令遊客們歎為觀止。  北海道的主要景點與城市包括札幌市、小樽市、富良野市、美瑛、函館市、登別、支笏湖、洞爺湖、層雲峽、旭川市...等 。</p>
+        <p><img src="images/photos/jp01.jpg" alt="北海道小樽運河"><img src="images/photos/jp02.jpg" alt="北海道美瑛"></p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3>東北地區簡介</h3>
+        <p>東北地區包括了青森、岩手、宮城、秋田、山形、福島等城市， 擁有許多日本國家級的珍貴古蹟。由於開發比起其他地區較緩，因此保留了許多未受破壞的自然美景，更有撼動人心的民俗祭典。以青森縣為例，面臨日本海與太平洋，充滿港都風情。境內有十和田湖、奧入瀨溪流、八甲田山等引人入勝的美景。此外，青森縣也是「富士」蘋果的發源地，品質優良的青森蘋果長年深受臺灣消費者的喜愛。</p>
+        <p><img src="images/photos/jp03.jpg" alt="青森奧入瀨"><img src="images/photos/jp04.jpg" alt="青森睡蓮沼"></p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3>關東地區簡介</h3>
+        <p>關東地方包括了東京都在內的六縣, 是日本經濟、文化各方面的重鎮。除了首都東京之外, 關東地方也有許多著名的旅遊景點, 例如以楓紅和瀑布著稱的日光國家公園, 還有著名的溫泉之鄉--箱根, 古城鐮倉和港都橫濱市也是必去的景點。別忘了還有東京迪士尼在向您招手喔！</p>
+        <p><img src="images/photos/jp05.jpg" alt="淺草寺"><img src="images/photos/jp06.jpg" alt="東京鐵塔"></p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3>關西地區簡介</h3>
+        <p>關西地區包括大阪、奈良、京都、名古屋、神戶等城市, 是日本的古都所在地, 例如大阪城、名古屋城等等, 都是歷史上重要的政治、經濟樞紐。關西地區也保存了許多重要的古蹟和傳統文化, 例如金閣寺、清水寺等著名的寺廟, 都是想要探訪日本文化的您不得不去的景點。另一方面, 關西各地的道地美食也值得推薦喔！</p>
+        <p><img src="images/photos/jp07.jpg" alt="名古屋城"><img src="images/photos/jp08.jpg" alt="京都金閣寺"></p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3>九州地區簡介</h3>
+        <p>九州是日本四大島中最南端的島嶼, 由福岡、佐賀、長崎、大分、熊本、宮崎及鹿兒島等七個縣組成, 境內有多座活火山, 因此也擁有二百處以上的溫泉。九州除了是溫泉天堂, 也是美食天堂, 讓人可同時享受泡湯和美食的樂趣。</p>
+        <p><img src="images/photos/jp09.jpg" alt="九州櫻島火山"><img src="images/photos/jp10.jpg" alt="九州豪斯登堡"></p>
+      </div>
+    </div>
+  </div>
+	<div class="copyright" data-role="footer"> 
+	  <div data-role="controlgroup" data-type="horizontal"><a href="#page2" data-role="button">推薦行程</a><a href="#page3" data-role="button">日本簡介</a><a href="#page4" data-role="button">日本寫真館</a><a href="#page5" data-role="button">旅遊日誌</a><a href="#page6" data-role="button">相關連結</a><a href="#page" data-role="button">HOME</a></div>
+	  本網站刊登之所有文字．圖片資訊均受版權法保護　嚴禁擅自複製．轉載<br>
+	  Copyright © 2012 Flag Japan Co.,Ltd. All rights reserved. </div>
+</div>
+
+<div data-role="page" id="page5">
+  <div data-role="header">
+    <h1><a href="#page"><img src="images/logo.png" alt="FlagJapan 福拉格日本旅遊網"></a></h1>
+  </div>
+  <img src="images/headp4.png" alt="旅遊日誌">
+  <div data-role="content">    <h2>特別報導：吃喝玩樂關西行 </h2>
+    <p>盼著盼著終於抵達關西囉！第一站小編來到號稱 「日本廚房」的大阪，這次一定要好好大吃一頓呀！現在就跟著小編一起來看看大阪有什麼好吃好玩的吧！</p>
+    <h3 class="title1">2012/6/6 大阪‧道頓崛美食筆記 </h3>
+    <p>道頓崛是大阪美食的集中營，街上超級熱鬧, 每家店都擺出最華麗的招牌和最誘人的菜色吸引著顧客呢！ </p>
+    <p> ↓可愛的河豚招牌 <br>
+      <img src="images/blogphotos/04.jpg"></p>
+    <p> ↓讓人食指大動的壽司模型<br>
+      <img src="images/blogphotos/05.jpg"></p>
+    <p>才剛抵達，小編就看到旅遊書上常看到的大螃蟹, 這就是傳說中有名的「螃蟹道樂」。「螃蟹道樂」光在道頓崛就有三家店，招牌就是一隻超大的的電動螃蟹, 想不看到都不行喔。顧名思義,「螃蟹道樂」當然是賣螃蟹的, 一進門就會看到水箱裡養了一大堆螃蟹，都是產地直送的哦！不過這麼大的螃蟹當然不便宜, 一客要價4000円左右(台幣一千多吧)，為了留點錢和肚子吃其他的名物，小編只好含淚和螃蟹說再見...。 </p>
+    <p> ↓電動螃蟹是最大的地標<br>
+      <img src="images/blogphotos/03.jpg"></p>
+    <p> 再走幾步路就看到了遠近馳名的「本家日本第一大章魚燒」, 現場大排長龍，只見師傅飛快地轉動著章魚燒，香味已經傳遍了整條街哦！這可不像台灣夜市賣的小小顆章魚燒, 每顆都有小編的巴掌大, 而且裡面都有新鮮的大章魚塊，這才是正宗的美味啊！不過也因為是現做，大口咬下去的小編立刻就被湯汁燙到了...奉勸各位在吃的時候要小心點啊！ </p>
+    <p> ↓本家大章魚燒的招牌，下面的小字說：我們和隔壁的店一點關係都沒有　<br>
+      <img src="images/blogphotos/02.jpg"></p>
+    <p> 吃了幾樣小吃差不多就飽囉！接下來就是甜點的時間了！說到甜點當然一定要來法善寺隔壁吃吃看傳說中的夫婦善哉紅豆湯圓。這是從明治時代就有的老店，店面小小的，賣的是「善哉」, 其實就是紅豆湯圓的意思。這天客人不多, 沒有等多久紅豆湯圓就來了。乍看還蠻小碗的，喝了一口就發現：真是超甜的！本來看到旁邊有塊海帶還不知道是幹嘛的，原來是中和甜味用的兩片鹹昆布，可是又太鹹了！兩個加起來讓小編光吃這一小碗就吃了半天，看來傳說中的名店並不適合小編啊...！ </p>
+    <p> ↓傳說中的夫婦善哉紅豆湯圓<br>
+      <img src="images/blogphotos/01.jpg"></p>
+    <p>酒足飯飽以後也就結束第一天的行程了！明天就要前進環球影城大玩特玩了！詳情請見下回分曉... </p></div>
+  <div class="copyright" data-role="footer"> 
+    <div data-role="controlgroup" data-type="horizontal"><a href="#page2" data-role="button">推薦行程</a><a href="#page3" data-role="button">日本簡介</a><a href="#page4" data-role="button">日本寫真館</a><a href="#page5" data-role="button">旅遊日誌</a><a href="#page6" data-role="button">相關連結</a><a href="#page" data-role="button">HOME</a></div>
+    本網站刊登之所有文字．圖片資訊均受版權法保護　嚴禁擅自複製．轉載<br>
+    Copyright © 2012 Flag Japan Co.,Ltd. All rights reserved. </div>
+</div>
+<div data-role="page" id="page6">
+  <div data-role="header">
+    <h1><a href="#page"><img src="images/logo.png" alt="FlagJapan 福拉格日本旅遊網"></a></h1>
+  </div>
+  <img src="images/headp5.png" alt="相關連結">
+  <div data-role="content">
+    <div data-role="collapsible-set">
+      <div data-role="collapsible">
+        <h3>航空公司</h3>
+        <br/>
+        <div class="ui-grid-c">
+          <div class="ui-block-a"><a href="http://www.china-airlines.com/ch/" target="_blank">中華航空</a></div>
+          <div class="ui-block-b"><a href="http://www.ana.co.jp/asw/wws/tw/ch/" target="_blank">全日空航空</a></div>
+          <div class="ui-block-c"><a href="http://www.singaporeair.com/" target="_blank">新加坡航空</a></div>
+          <div class="ui-block-d"><a href="http://www.tw.jal.com/twl/zhtw/" target="_blank">日本航空</a></div>
+        </div>
+        <br/>
+        <div class="ui-grid-c">
+          <div class="ui-block-a"><a href="http://www.cathaypacific.com/" target="_blank">國泰航空</a></div>
+          <div class="ui-block-b"><a href="http://www.evaair.com/zh-tw/index.html" target="_blank">長榮航空</a></div>
+          <div class="ui-block-c"><a href="http://zt.delta.com/" target="_blank">達美航空</a></div>
+          <div class="ui-block-d"></div>
+        </div>
+        <br/>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3>日本機場</h3>
+        <br/>
+        <div class="ui-grid-c">
+          <div class="ui-block-a"><a href="http://www.new-chitose-airport.jp/" target="_blank">新千歲機場</a></div>
+          <div class="ui-block-b"><a href="http://www.tokyo-airport-bldg.co.jp/" target="_blank">羽田機場</a></div>
+          <div class="ui-block-c"><a href="http://www.narita-airport.jp/" target="_blank">成田機場</a></div>
+          <div class="ui-block-d"><a href="http://www.centrair.jp/index.html" target="_blank">中部國際機場</a></div>
+        </div>
+        <br/>
+        <div class="ui-grid-c">
+          <div class="ui-block-a"><a href="http://www.kansai-airport.or.jp/" target="_blank">關西國際機場</a></div>
+          <div class="ui-block-b"><a href="http://www.hij.airport.jp/" target="_blank">廣島機場</a></div>
+          <div class="ui-block-c"><a href="http://www.fuk-ab.co.jp/" target="_blank">福岡機場</a></div>
+          <div class="ui-block-d"><a href="http://www.fuk-ab.co.jp/" target="_blank">那霸機場</a></div>
+        </div>
+        <br/>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3>日本JR</h3>
+        <br/>
+        <div class="ui-grid-c">
+          <div class="ui-block-a"><a href="http://www.jrhokkaido.co.jp/" target="_blank">JR北海道</a></div>
+          <div class="ui-block-b"><a href="http://www.westjr.co.jp/" target="_blank">JR西日本</a></div>
+          <div class="ui-block-c"><a href="http://www.jreast.co.jp/" target="_blank">JR東日本</a></div>
+          <div class="ui-block-d"><a href="http://jr-central.co.jp/" target="_blank">JR東海</a></div>
+        </div>
+        <br/>
+        <div class="ui-grid-c">
+          <div class="ui-block-a"><a href="http://www.jr-shikoku.co.jp/" target="_blank">JR四國</a></div>
+          <div class="ui-block-b"><a href="http://www.jrkyushu.co.jp/" target="_blank">JR九州</a></div>
+          <div class="ui-block-c"></div>
+          <div class="ui-block-d"></div>
+        </div>
+        <br/>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3>日本旅遊資訊網</h3>
+        <br/>
+        <div class="ui-grid-a">
+          <div class="ui-block-a"><a href="http://www.e-japannavi.com/" target="_blank">日本漫遊</a></div>
+          <div class="ui-block-b"><a href="http://visit-japan.jp/index.html" target="_blank">日本旅遊活動</a></div>
+        </div>
+        <br/>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3>實用網站</h3>
+        <br/>
+        <div class="ui-grid-b">
+          <div class="ui-block-a"><a href="http://www.boca.gov.tw/" target="_blank">外交部領事事務局</a></div>
+          <div class="ui-block-b"><a href="http://www.koryu.or.jp/taipei/ez3_contents.nsf/Top" target="_blank">交流協會</a></div>
+          <div class="ui-block-c"><a href="http://www.welcome2japan.hk/" target="_blank">日本國家旅遊局</a></div>
+        </div>
+        <br/>
+        <div class="ui-grid-b">
+          <div class="ui-block-a"><a href="http://www.jma.go.jp/jp/week/" target="_blank">日本天氣查詢</a></div>
+          <div class="ui-block-b"><a href="http://tw.money.yahoo.com/currency_foreign2bank?currency=JPY" target="_blank">匯率換算 (奇摩股市)</a></div>
+          <div class="ui-block-c"></div>
+        </div>
+        <br/>
+      </div>
+    </div>
+  </div>
+  <div class="copyright" data-role="footer"> 
+    <div data-role="controlgroup" data-type="horizontal"><a href="#page2" data-role="button">推薦行程</a><a href="#page3" data-role="button">日本簡介</a><a href="#page4" data-role="button">日本寫真館</a><a href="#page5" data-role="button">旅遊日誌</a><a href="#page6" data-role="button">相關連結</a><a href="#page" data-role="button">HOME</a></div>
+    本網站刊登之所有文字．圖片資訊均受版權法保護　嚴禁擅自複製．轉載<br>
+    Copyright © 2012 Flag Japan Co.,Ltd. All rights reserved. </div>
+</div>
+<div data-role="page" id="page7">
+  <div data-role="header">
+    <h1><a href="#page"><img src="images/logo.png" alt="FlagJapan 福拉格日本旅遊網"></a></h1>
+  </div>
+  <img src="images/headp1.png" alt="推薦行程">
+  <div data-role="content">
+    <form name="form1" method="post" action="">
+            <p>行程名稱：東京．迪士尼 橫濱．中華街 拉麵博物館 <br>
+        出發日期：2100 年 06 月 07 日<br>
+        住宿飯店：團體飯店 4 晚 (入住日期 2100/06/07 ,退房日期 2100/06/11 ) </p>
+      <p>請填寫下列資料，我們會盡速派專人為您服務。</p><div data-role="fieldcontain">
+        <label for="name">姓名</label>
+        <input name="name" type="text" id="name" value="" data-theme="e"  />
+      </div>
+      <div data-role="fieldcontain">
+        <fieldset data-role="controlgroup" data-type="horizontal">
+          <legend>性別</legend>
+          <input name="sex" type="radio" id="sex_0" value="male" data-theme="b" />
+          <label for="sex_0">男</label>
+          <input name="sex" type="radio" id="sex_1" value="female" data-theme="b" />
+          <label for="sex_1">女</label>
+        </fieldset>
+      </div>
+      <div data-role="fieldcontain">
+        <label for="roomtype" class="select">房型</label><select name="roomtype" id="roomtype" data-theme="b">
+          <option value="標準單人房">標準單人房</option>
+          <option value="標準雙人房">標準雙人房</option>
+          <option value="豪華單人房">豪華單人房</option>
+          <option value="豪華雙人房">豪華雙人房</option>
+        </select>
+        <div data-role="fieldcontain">
+          <label for="roomnumber">房數</label><input name="roomnumber" type="range" id="roomnumber" max="4" min="1" value="0" data-theme="e" />
+        </div>
+        <div data-role="fieldcontain">
+          <label for="tel">連絡電話</label>
+          <input name="tel" type="text" id="tel" value="家用電話或手機號碼皆可" size="25" maxlength="15" data-theme="e"  />
+        </div>
+        <div data-role="fieldcontain">
+          <label for="email">E-Mail</label>
+          <input name="email" type="text" id="email" value="" data-theme="e"  />
+        </div>
+        <div data-role="fieldcontain">
+          <fieldset data-role="controlgroup">
+            <legend>下次有興趣的區域</legend>
+            <input name="place" type="checkbox" class="custom" id="place_0" value="北海道、東北" data-theme="b" />
+            <label for="place_0">北海道、東北</label>
+            <input name="place" type="checkbox" class="custom" id="place_1" value="關東" data-theme="b" />
+            <label for="place_1">關東</label>
+            <input name="place" type="checkbox" class="custom" id="place_2" value="關西" data-theme="b" />
+            <label for="place_2">關西</label>
+            <input name="place" type="checkbox" class="custom" id="place_3" value="四國" data-theme="b" />
+            <label for="place_3">四國</label>
+            <input name="place" type="checkbox" class="custom" id="place_4" value="九州、沖繩" data-theme="b" />
+            <label for="place_4">九州、沖繩</label>
+          </fieldset>
+        </div>
+        <div data-role="fieldcontain">
+          <label for="textarea">建議事項</label><textarea name="textarea" cols="40" rows="8" id="textarea" data-theme="e"></textarea>
+        </div>
+        <div data-inline="true" align="center">
+          <input name="重設" type="reset" value="重設" data-inline="true" data-theme="b" />
+          <input type="submit" value="送出" data-inline="true" data-theme="b" />
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="copyright" data-role="footer"> 
+    <div data-role="controlgroup" data-type="horizontal"><a href="#page2" data-role="button">推薦行程</a><a href="#page3" data-role="button">日本簡介</a><a href="#page4" data-role="button">日本寫真館</a><a href="#page5" data-role="button">旅遊日誌</a><a href="#page6" data-role="button">相關連結</a><a href="#page" data-role="button">HOME</a></div>
+    本網站刊登之所有文字．圖片資訊均受版權法保護　嚴禁擅自複製．轉載<br>
+    Copyright © 2012 Flag Japan Co.,Ltd. All rights reserved. </div>
+</div>
+</body>
+</html>
